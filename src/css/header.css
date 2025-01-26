@@ -1,0 +1,38 @@
+
+.App-logo {
+    height:40px;
+    width:40px;
+    margin-left: 10px;
+}
+.App-header {
+    background-color: #282c34;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+    flex-direction: row;
+}
+.nav-link {
+    color: aliceblue !important;
+}
+.nav-link:hover {
+    color: red !important;
+}
+
+
+
+/* mobile nav bar */
+.side-bar {
+    background-color: #282c34 !important;
+    color: aliceblue !important;
+}
+.side-bar .offcanvas-header .btn-close {
+    background-color: red;
+}
+.App-header .bg-body-tertiary.navbar-light {
+    background-color: transparent !important;
+}
+.App-header .bg-body-tertiary.navbar-light .container-fluid button {
+    background-color:aliceblue !important;
+}
