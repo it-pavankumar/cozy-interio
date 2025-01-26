@@ -1,6 +1,7 @@
 {
   "name": "cozy-interio",
   "version": "0.1.0",
+  "homepage": "https://it-pavankumar.github.io/cozy-interio",
   "private": true,
   "dependencies": {
     "bootstrap": "^5.3.3",
@@ -11,6 +12,8 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -35,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "parcel": "^2.13.3",
     "web-vitals": "^4.2.4"
   }
