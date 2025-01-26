@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cozy-interio/static/css/main.403f87c0.css",
+    "main.js": "/cozy-interio/static/js/main.a60ad805.js",
+    "static/js/488.b3c38560.chunk.js": "/cozy-interio/static/js/488.b3c38560.chunk.js",
+    "index.html": "/cozy-interio/index.html",
+    "main.403f87c0.css.map": "/cozy-interio/static/css/main.403f87c0.css.map",
+    "main.a60ad805.js.map": "/cozy-interio/static/js/main.a60ad805.js.map",
+    "488.b3c38560.chunk.js.map": "/cozy-interio/static/js/488.b3c38560.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.403f87c0.css",
+    "static/js/main.a60ad805.js"
+  ]
+}
