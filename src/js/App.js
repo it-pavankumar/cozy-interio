@@ -3,9 +3,12 @@ import Header from './header.js';
 
 function App() {
   return (
-    <div className="App">
+    <><div className="App">
       <Header />
     </div>
+    <div className='body'>
+      
+    </div></>
   );
 }
 
