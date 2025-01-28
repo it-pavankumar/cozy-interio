@@ -1,0 +1,12 @@
+
+.carousel .carousel-inner .carousel-item img{
+    height: 650px !important;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .carousel .carousel-inner .carousel-item img {
+        height: 300px !important;
+    }
+}

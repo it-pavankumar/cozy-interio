@@ -1,0 +1,122 @@
+
+.mid-sec {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #282c34;
+    color: aliceblue;
+    padding: 70px 0;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.mid-sec .serv-list{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 2px solid red;
+    margin: 16px 8px;
+    border-radius: 22px;
+    width: 200px;
+}
+
+.howWeWork-sec {
+    text-align: center;
+    padding: 64px 16px;
+    position: relative;
+}
+.howWeWork-sec p.heading { font-size: 46px; margin-bottom: 64px;}
+.howWeWork-sec p.heading span {
+    font-weight: 800;
+    color: red;
+    
+}
+.howWeWork-sec .slider  .stages {
+    position: relative;
+    padding: 16px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.howWeWork-sec .slider .stages span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        font-weight: 600;
+        background-color: red;
+        padding: 10px 16px;
+        color: aliceblue;
+        border-radius: 50%;
+}
+
+.howWeWork-sec .slider .swiper { position: relative;}
+.howWeWork-sec .slider .swiper .swiper-wrapper .swiper-slide:not(:last-child):before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 32px;
+    width: 200px;
+    height: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/line.png");
+    
+}
+.howWeWork-sec .slider .stages .stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.howWeWork-sec .stages span:hover,
+.howWeWork-sec .stages .stage span.active {
+    box-shadow: 0px 0px 10px 1px;
+    cursor: pointer;
+    color: #282c34;
+}
+.howWeWork-sec .stages .stage p.active,
+.howWeWork-sec .stages .stage:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.howWeWork-sec .slider {
+    width: 90%;
+    margin: 0 auto;
+}
+.howWeWork-sec .slider .swiper {
+    overflow: hidden;
+}
+.howWeWork-sec .slider .swiper .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* mobile css */
+@media only screen and (max-width: 768px) {
+    .mid-sec { flex-direction: column; align-items: center;}
+    .mid-sec .serv-list{
+        width: 300px;
+        flex-direction: column;
+        margin-bottom: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .mid-sec .serv-list{
+        width: 220px;
+    }
+}

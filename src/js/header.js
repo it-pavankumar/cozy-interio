@@ -38,7 +38,6 @@ function OffcanvasExample() {
                 <Nav.Link href="#features" className='nav-link'>Design Ideas</Nav.Link>
                 <Nav.Link href="#pricing" className='nav-link'>Cost Estimator</Nav.Link>
                 <Nav.Link href="#pricing" className='nav-link'>Why Choose Us</Nav.Link>
-                <Nav.Link href="#pricing" className='nav-link'>Blog</Nav.Link>
                 <Nav.Link href="#pricing" className='nav-link'>Contact Us</Nav.Link>
               </Nav>
           </Offcanvas.Body>
