@@ -1,20 +1,32 @@
 {
   "files": {
-    "main.css": "/cozy-interio/static/css/main.f7caf41e.css",
-    "main.js": "/cozy-interio/static/js/main.fdd05f0c.js",
+    "main.css": "/cozy-interio/static/css/main.d880fd23.css",
+    "main.js": "/cozy-interio/static/js/main.eff22fbf.js",
     "static/js/488.b3c38560.chunk.js": "/cozy-interio/static/js/488.b3c38560.chunk.js",
     "static/media/3.jpg": "/cozy-interio/static/media/3.0f0f5682f7724fce0430.jpg",
     "static/media/1.jpg": "/cozy-interio/static/media/1.b1b95a1ba394762402bc.jpg",
     "static/media/4.jpg": "/cozy-interio/static/media/4.cfeb9c1683c90a7e1102.jpg",
+    "static/media/soon.png": "/cozy-interio/static/media/soon.eb48d30a143a1489308e.png",
     "static/media/2.jpg": "/cozy-interio/static/media/2.b9b00d277ac57eba9301.jpg",
+    "static/media/whatsappa.png": "/cozy-interio/static/media/whatsappa.31d4b1d27126bcc1f665.png",
+    "static/media/slide8.png": "/cozy-interio/static/media/slide8.c96616ed8c060ca39880.png",
+    "static/media/slide6.png": "/cozy-interio/static/media/slide6.66e56e44d6d81e48cc49.png",
+    "static/media/slide4.png": "/cozy-interio/static/media/slide4.7107ec05a3ef49db3869.png",
+    "static/media/slide7.png": "/cozy-interio/static/media/slide7.8c605eaca65ff559f2a2.png",
+    "static/media/slide5.png": "/cozy-interio/static/media/slide5.425569689f442cd052bd.png",
+    "static/media/slide3.png": "/cozy-interio/static/media/slide3.b894d00a9dd9c9f7117d.png",
+    "static/media/slide2.png": "/cozy-interio/static/media/slide2.f4f9f51dcb8d3ff2293b.png",
+    "static/media/slide9.png": "/cozy-interio/static/media/slide9.855f2931dc84a202a8f0.png",
     "static/media/slide1.png": "/cozy-interio/static/media/slide1.e8026da4ed990b916753.png",
+    "static/media/facebook.svg": "/cozy-interio/static/media/facebook.95728f8f306ef79ecfe88d2ae4aac6ab.svg",
+    "static/media/instagram.svg": "/cozy-interio/static/media/instagram.02cb26456c205c0f9c665eea026e9e9f.svg",
     "index.html": "/cozy-interio/index.html",
-    "main.f7caf41e.css.map": "/cozy-interio/static/css/main.f7caf41e.css.map",
-    "main.fdd05f0c.js.map": "/cozy-interio/static/js/main.fdd05f0c.js.map",
+    "main.d880fd23.css.map": "/cozy-interio/static/css/main.d880fd23.css.map",
+    "main.eff22fbf.js.map": "/cozy-interio/static/js/main.eff22fbf.js.map",
     "488.b3c38560.chunk.js.map": "/cozy-interio/static/js/488.b3c38560.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7caf41e.css",
-    "static/js/main.fdd05f0c.js"
+    "static/css/main.d880fd23.css",
+    "static/js/main.eff22fbf.js"
   ]
 }
