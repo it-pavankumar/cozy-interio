@@ -2,7 +2,7 @@ import '../css/howWeWork.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCouch, faHourglassEnd, faHouseChimneyUser,faHandHoldingDollar, faPeopleArrows, faCubes } from '@fortawesome/free-solid-svg-icons';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import slide1 from "../assets/howWeWork/slide1.png";
@@ -22,11 +22,13 @@ const stages = [
 
 function HowWeWork() {
     const swiperRef = useRef(null); // Reference to Swiper instance
+    const [activeIndex, setActiveIndex] = useState(0);
   
     // Function to go to a specific slide
     const goToSlide = (index) => {
         if (swiperRef.current && swiperRef.current.swiper) {
-        swiperRef.current.swiper.slideTo(index);
+            swiperRef.current.swiper.slideTo(index);
+            setActiveIndex(index);
         }
     };
     return (
@@ -60,16 +62,25 @@ function HowWeWork() {
     <div className='howWeWork-sec'>
         <p className='heading'>How We <span>Work</span></p>
         <div className='container-div'>
-            <Swiper className='main-swiper' scrollbar-clickable="true" mousewheel-invert="true" spaceBetween={50} slidesPerView={2} onSlideChange={() => console.log('slide change')} onSwiper={(swiper) => console.log(swiper)}>
+            <Swiper className='main-swiper' loop={true} scrollbar-clickable="true" mousewheel-invert="true" spaceBetween={50} slidesPerView={2} onSlideChange={
+                (swiper) => {
+                    
+                    console.log('slide change')
+                    setActiveIndex(swiper.activeIndex);
+                    goToSlide(swiper.activeIndex);
+                }} 
+                onSwiper={(swiper) => {
+                    console.log(swiper)
+                }}>
                 { 
                     stages.map((stage, i) => { 
                         return (
                             <>
                             <SwiperSlide key={i}>
-                                <div className='stages' key={i}>
+                                <div className={`${activeIndex === i ? 'active' : ''} stages`} key={i}>
                                     <div className='stage' slot={stage.text} onClick={() => goToSlide(i)}>
-                                        <span className={i=== 0  ? 'active' : ''} >{stage.item}</span> 
-                                        <p className={i=== 0  ? 'active' : ''}>{stage.text}</p>
+                                        <span className={activeIndex === i  ? 'active' : ''} >{stage.item}</span> 
+                                        <p className={activeIndex === i  ? 'active' : ''}>{stage.text}</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
