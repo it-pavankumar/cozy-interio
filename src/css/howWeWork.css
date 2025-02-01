@@ -86,11 +86,14 @@
     box-shadow: 0px 0px 10px 1px;
     cursor: pointer;
     color: #282c34;
+    font-weight: 600;
+    transition:color 500ms;
 }
 .howWeWork-sec .container-div .swiper.main-swiper .stages .stage p.active,
 .howWeWork-sec .container-div .swiper.main-swiper .stages .stage:hover {
     color: red;
     cursor: pointer;
+    transition: color 500ms;
 }
 .howWeWork-sec .container-div .swiper.main-swiper .swiper-wrapper .swiper-slide:not(:last-child):before{
     content: "";
@@ -150,6 +153,24 @@
 .howWeWork-sec .container-div .carousal-main .swiper.carousal-swiper .swiper-button-next {
     top: 60%;
     width: 18%;
+}
+.howWeWork-sec .container-div .carousal-main .swiper.carousal-swiper .actual-slide .text-sec .knowMore { 
+    width: 100px;
+    margin: 36px auto 0 auto;
+}
+.howWeWork-sec .container-div .carousal-main .swiper.carousal-swiper .actual-slide .text-sec .knowMore .custBtn{
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+.howWeWork-sec .container-div .carousal-main .swiper.carousal-swiper .actual-slide .text-sec .knowMore .custBtn:hover {
+    background-color: red;
+    color: aliceblue;
+    font-weight: 600;
+    transition: background-color 500ms, color 500ms;
 }
 
 

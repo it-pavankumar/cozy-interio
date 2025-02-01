@@ -1,0 +1,142 @@
+.getInTouch-sec {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+    background-color: #282c34;
+}
+.getInTouch-sec p.heading {
+    font-size: 48px;
+    color: red;
+    margin: 14px 0;
+}
+.getInTouch-sec p.sub {
+    font-size: 16px;
+}.getInTouch-sec p.sub span.bold {
+    font-weight: 800;
+}
+.getInTouch-sec p.heading span {
+    color: aliceblue;
+    font-weight: 600;
+}
+.getInTouch-sec .get-mid-sec {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    padding: 0 64px;
+}
+.getInTouch-sec .get-mid-sec .text-area p {
+    margin-top: 1rem;
+    text-wrap: balance;
+    padding: 0 16px;
+}
+.getInTouch-sec .get-mid-sec .text-area p.numb { 
+    font-weight: 600;
+    font-size: 14px;
+    color: aliceblue;
+}
+.getInTouch-sec .get-mid-sec .text-area p.numb span.whatsApp a img{
+    width: 55px;
+    margin-right: 10px;
+    position: fixed;
+    bottom: 60px;
+    right: 0px;
+}
+.getInTouch-sec .get-mid-sec .text-area p.numb span.call {
+    font-size: 14px;
+}
+.getInTouch-sec .get-mid-sec .text-area p.numb a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.getInTouch-sec .get-mid-sec .text-area p span{
+    font-size: 24px;
+    font-weight: 600;
+}
+.getInTouch-sec .get-mid-sec .touch-sec form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+}
+.getInTouch-sec .get-mid-sec .touch-sec form label {
+    font-size: 14px;
+    padding: 14px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.getInTouch-sec .get-mid-sec .touch-sec form label input, select {
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.getInTouch-sec .get-mid-sec .touch-sec form button.custBtn{
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 8px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 12px;
+    background-color: #282c34;
+    width: 150px;
+    margin: 34px 0;
+}
+.getInTouch-sec .get-mid-sec .touch-sec form button.custBtn:hover {
+    background-color:aliceblue;
+    color: black;
+    font-weight: 600;
+    transition: background-color 500ms, color 500ms, font-weight 500ms;
+}
+
+.media-links {
+    height: 50px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    border-bottom: 1px solid;
+}
+.media-links p {
+    margin: 8px 54px;
+}
+.media-links p span a{
+    font-size: 16px;
+    text-decoration: none;
+}
+.media-links p span img {
+    width: 35px;
+    padding: 5px;
+}
+.media-links p span img:hover {
+    border: 3px solid black;
+    border-radius: 5px;
+    transition: border 500ms;
+}
+
+
+
+/* mobile css */
+@media only screen and (max-width: 768px) {
+    .getInTouch .getInTouch-sec .heading {
+        margin: 10px 0;
+    }
+    .getInTouch-sec .get-mid-sec {
+        flex-direction: column;
+        padding: initial;
+    }
+    .getInTouch-sec .get-mid-sec p {
+        width: 100%;
+        text-align: center;
+    }
+    .media-links p {
+        margin-right: 0;
+    }
+}

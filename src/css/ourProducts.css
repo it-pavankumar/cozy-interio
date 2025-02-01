@@ -1,0 +1,36 @@
+.ourProducts-sec .mid-sec p.heading { 
+    font-size: 46px;
+    margin: 0 64px 34px;
+    text-align: center;
+}
+.ourProducts-sec .mid-sec p.heading span {
+    font-weight: 600;
+    color: red;
+}
+.ourProducts-sec .mid-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+.ourProducts-sec .mid-sec p {
+    width: 80%;
+    color: black;
+}
+.ourProducts-sec .mid-sec img {
+    margin-top: 48px;
+    width: 350px;
+}
+
+/* mobile css */
+@media only screen and (max-width: 768px) {
+    .ourProducts-sec .mid-sec {
+        padding: 35px 0;
+    }
+    .ourProducts-sec .mid-sec p.heading {
+        font-size: 40px;
+        width: 100%;
+        margin: 10px 0 20px;
+    }
+}

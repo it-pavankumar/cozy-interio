@@ -1,9 +1,9 @@
 import Carousel from "react-bootstrap/Carousel";
 import "../css/carousel.css";
-import img1 from "../assets/1.jpg";
-import img2 from "../assets/2.jpg";
-import img3 from "../assets/3.jpg";
-import img4 from "../assets/4.jpg";
+import img1 from "../assets/carousel/1.jpg";
+import img2 from "../assets/carousel/2.jpg";
+import img3 from "../assets/carousel/3.jpg";
+import img4 from "../assets/carousel/4.jpg";
 
 function UncontrolledExample() {
   return (

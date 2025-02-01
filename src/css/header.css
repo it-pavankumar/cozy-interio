@@ -26,6 +26,7 @@
 .side-bar {
     background-color: #282c34 !important;
     color: aliceblue !important;
+    width: 75% !important;
 }
 .side-bar .offcanvas-header .btn-close {
     background-color: red;

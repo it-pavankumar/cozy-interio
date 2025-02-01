@@ -5,3 +5,11 @@
 .howItWorks {
     position: relative;
 }
+
+
+/* mobile css */
+@media only screen and (max-width: 910px) { 
+    .bodyCarousel {
+        width: 100%;
+    }
+}
