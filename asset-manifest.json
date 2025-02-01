@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cozy-interio/static/css/main.a8befc5b.css",
+    "main.css": "/cozy-interio/static/css/main.f7caf41e.css",
     "main.js": "/cozy-interio/static/js/main.db6ff7d1.js",
     "static/js/488.b3c38560.chunk.js": "/cozy-interio/static/js/488.b3c38560.chunk.js",
     "static/media/3.jpg": "/cozy-interio/static/media/3.0f0f5682f7724fce0430.jpg",
@@ -9,12 +9,12 @@
     "static/media/2.jpg": "/cozy-interio/static/media/2.b9b00d277ac57eba9301.jpg",
     "static/media/slide1.png": "/cozy-interio/static/media/slide1.e8026da4ed990b916753.png",
     "index.html": "/cozy-interio/index.html",
-    "main.a8befc5b.css.map": "/cozy-interio/static/css/main.a8befc5b.css.map",
+    "main.f7caf41e.css.map": "/cozy-interio/static/css/main.f7caf41e.css.map",
     "main.db6ff7d1.js.map": "/cozy-interio/static/js/main.db6ff7d1.js.map",
     "488.b3c38560.chunk.js.map": "/cozy-interio/static/js/488.b3c38560.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8befc5b.css",
+    "static/css/main.f7caf41e.css",
     "static/js/main.db6ff7d1.js"
   ]
 }
