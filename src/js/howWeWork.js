@@ -2,6 +2,10 @@ import '../css/howWeWork.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCouch, faHourglassEnd, faHouseChimneyUser,faHandHoldingDollar, faPeopleArrows, faCubes } from '@fortawesome/free-solid-svg-icons';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import React, { useRef } from "react";
+import { Navigation } from "swiper/modules";
+import "swiper/css/navigation";
+import slide1 from "../assets/howWeWork/slide1.png";
 
 
 const stages = [
@@ -17,6 +21,14 @@ const stages = [
 ];
 
 function HowWeWork() {
+    const swiperRef = useRef(null); // Reference to Swiper instance
+  
+    // Function to go to a specific slide
+    const goToSlide = (index) => {
+        if (swiperRef.current && swiperRef.current.swiper) {
+        swiperRef.current.swiper.slideTo(index);
+        }
+    };
     return (
       <>
       <div className='mid-sec'>
@@ -47,15 +59,15 @@ function HowWeWork() {
     </div>
     <div className='howWeWork-sec'>
         <p className='heading'>How We <span>Work</span></p>
-        <div className='slider'>
-            <Swiper spaceBetween={50} slidesPerView={2} onSlideChange={() => console.log('slide change')} onSwiper={(swiper) => console.log(swiper)}>
+        <div className='container-div'>
+            <Swiper className='main-swiper' scrollbar-clickable="true" mousewheel-invert="true" spaceBetween={50} slidesPerView={2} onSlideChange={() => console.log('slide change')} onSwiper={(swiper) => console.log(swiper)}>
                 { 
                     stages.map((stage, i) => { 
                         return (
                             <>
                             <SwiperSlide key={i}>
                                 <div className='stages' key={i}>
-                                    <div className='stage'>
+                                    <div className='stage' slot={stage.text} onClick={() => goToSlide(i)}>
                                         <span className={i=== 0  ? 'active' : ''} >{stage.item}</span> 
                                         <p className={i=== 0  ? 'active' : ''}>{stage.text}</p>
                                     </div>
@@ -66,6 +78,34 @@ function HowWeWork() {
                 })
                 }
             </Swiper>
+            <div class="carousal-main">
+                <Swiper ref={swiperRef} spaceBetween={50} slidesPerView={1} modules={[Navigation]} navigation className="carousal-swiper rounded-lg">
+                    <SwiperSlide className="actual-slide p-6 bg-gray-100">
+                    <div className='text-sec'>
+                        <h3 className="text-xl font-bold mb-2">Online Consultation</h3>
+                        <p style={{width:'85%'}}>Ready to assist you regarding all things related to home interiors.</p>
+                        <div className='knowMore'>
+                            <a class="custBtn hvr-sweep-to-right clr-black" href="https://www.niftyinterio.com/interior-design-process">Know More</a>
+                        </div>
+                    </div>
+                    <div className='img-sec'>
+                        <img src={slide1} alt='slide1' />
+                    </div>
+                    </SwiperSlide>
+                    <SwiperSlide className="actual-slide p-6 bg-gray-100">
+                    <div className='text-sec'>
+                        <h3 className="text-xl font-bold mb-2">Online Consultation</h3>
+                        <p style={{width:'85%'}}>Ready to assist you regarding all things related to home interiors.</p>
+                        <div className='knowMore'>
+                            <a class="custBtn hvr-sweep-to-right clr-black" href="https://www.niftyinterio.com/interior-design-process">Know More</a>
+                        </div>
+                    </div>
+                    <div className='img-sec'>
+                        <img src={slide1} alt='slide1' />
+                    </div>
+                    </SwiperSlide>
+                </Swiper>
+            </div>
         </div>
     </div>
     </>

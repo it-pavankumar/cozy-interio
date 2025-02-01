@@ -22,16 +22,38 @@
 
 .howWeWork-sec {
     text-align: center;
-    padding: 64px 16px;
     position: relative;
 }
-.howWeWork-sec p.heading { font-size: 46px; margin-bottom: 64px;}
+.howWeWork-sec p.heading { font-size: 46px; margin: 64px;}
 .howWeWork-sec p.heading span {
     font-weight: 800;
     color: red;
     
 }
-.howWeWork-sec .slider  .stages {
+/* /////////////////////////////////////// */
+
+
+.howWeWork-sec .container-div {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.howWeWork-sec .container-div .swiper.main-swiper { 
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 75%;
+}
+.howWeWork-sec .container-div .swiper.main-swiper .swiper-wrapper {
+    display: flex;
+}
+
+.howWeWork-sec .container-div .swiper.main-swiper .stages {
     position: relative;
     padding: 16px;
     overflow: hidden;
@@ -40,21 +62,37 @@
     align-items: center;
     margin: 0 auto;
 }
-.howWeWork-sec .slider .stages span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60px;
-        height: 60px;
-        font-weight: 600;
-        background-color: red;
-        padding: 10px 16px;
-        color: aliceblue;
-        border-radius: 50%;
+.howWeWork-sec .container-div .swiper.main-swiper .stages .stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 28px;
 }
-
-.howWeWork-sec .slider .swiper { position: relative;}
-.howWeWork-sec .slider .swiper .swiper-wrapper .swiper-slide:not(:last-child):before{
+.howWeWork-sec .container-div .swiper.main-swiper .stages span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-weight: 600;
+    background-color: red;
+    padding: 10px 16px;
+    color: aliceblue;
+    border-radius: 50%;
+}
+.howWeWork-sec .container-div .swiper.main-swiper .stages span:hover,
+.howWeWork-sec .container-div .swiper.main-swiper .stages .stage span.active {
+    box-shadow: 0px 0px 10px 1px;
+    cursor: pointer;
+    color: #282c34;
+}
+.howWeWork-sec .container-div .swiper.main-swiper .stages .stage p.active,
+.howWeWork-sec .container-div .swiper.main-swiper .stages .stage:hover {
+    color: red;
+    cursor: pointer;
+}
+.howWeWork-sec .container-div .swiper.main-swiper .swiper-wrapper .swiper-slide:not(:last-child):before{
     content: "";
     position: absolute;
     z-index: -1;
@@ -63,46 +101,55 @@
     height: 25px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../assets/line.png");
-    
+    background-image: url("../assets/line.png");   
 }
-.howWeWork-sec .slider .stages .stage {
+.howWeWork-sec .container-div .carousal-main {
+    margin: 0 auto 50px;
+    padding: 25px 0;
+    width: 90%;
+    overflow: hidden;
+}
+
+.howWeWork-sec .container-div .carousal-main .swiper.carousal-swiper {
+    display: flex;
+    padding: 25px;
+    position: static;
+}
+.howWeWork-sec .container-div .carousal-main .swiper.carousal-swiper .swiper-wrapper {
+    position: relative;
+    width: auto;
+    display: flex;
+}
+.howWeWork-sec .container-div .carousal-main .swiper.carousal-swiper .swiper-wrapper .swiper-slide.actual-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 28px;
+    margin: 0px auto;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 30px;
 }
-
-.howWeWork-sec .stages span:hover,
-.howWeWork-sec .stages .stage span.active {
-    box-shadow: 0px 0px 10px 1px;
-    cursor: pointer;
-    color: #282c34;
-}
-.howWeWork-sec .stages .stage p.active,
-.howWeWork-sec .stages .stage:hover {
-    color: red;
-    cursor: pointer;
-}
-
-.howWeWork-sec .slider {
-    width: 90%;
-    margin: 0 auto;
-}
-.howWeWork-sec .slider .swiper {
-    overflow: hidden;
-}
-.howWeWork-sec .slider .swiper .swiper-wrapper {
-    display: flex;
-    align-items: center;
+.howWeWork-sec .container-div .carousal-main .swiper.carousal-swiper .swiper-wrapper .swiper-slide.actual-slide .img-sec img {
     width: 100%;
 }
-
-
-
-
-
+.howWeWork-sec .container-div .carousal-main .swiper.carousal-swiper .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: '<' !important;
+    font-size: 28px;
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+}
+.howWeWork-sec .container-div .carousal-main .swiper.carousal-swiper .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: '>' !important;
+    font-size: 28px;
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+}
+.howWeWork-sec .container-div .carousal-main .swiper.carousal-swiper .swiper-button-prev,
+.howWeWork-sec .container-div .carousal-main .swiper.carousal-swiper .swiper-button-next {
+    top: 60%;
+}
 
 
 /* mobile css */
@@ -112,6 +159,9 @@
         width: 300px;
         flex-direction: column;
         margin-bottom: 12px;
+    }
+    .howWeWork-sec .container-div .carousal-main .swiper.carousal-swiper .swiper-wrapper .swiper-slide.actual-slide {
+        flex-direction: column;
     }
 }
 
