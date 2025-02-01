@@ -106,7 +106,7 @@
 .howWeWork-sec .container-div .carousal-main {
     margin: 0 auto 50px;
     padding: 25px 0;
-    width: 90%;
+    width: 80%;
     overflow: hidden;
 }
 
@@ -149,6 +149,7 @@
 .howWeWork-sec .container-div .carousal-main .swiper.carousal-swiper .swiper-button-prev,
 .howWeWork-sec .container-div .carousal-main .swiper.carousal-swiper .swiper-button-next {
     top: 60%;
+    width: 18%;
 }
 
 
